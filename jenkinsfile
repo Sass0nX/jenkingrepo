@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    environment{
+        repo = 'https://github.com/Sass0nX/jenkingrepo.git'
+    }
+    stages{
+        stage('fetching'){
+            steps{
+                sh 'echo fatching'
+            }
+            
+        }
+        stage('building'){
+            steps{
+                sh 'echo building'
+            }
+        }        
+        stage('testing'){
+            steps{
+                sh 'echo testing'
+            }
+        }
+        stage('deploying'){
+            steps{
+                sh 'deploying'
+            }
+        }
+    }
+}
