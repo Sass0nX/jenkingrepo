@@ -1,8 +1,5 @@
 pipeline{
     agent any
-    environment{
-        repo = 'https://github.com/Sass0nX/jenkingrepo.git'
-    }
     stages{
         stage('fetching'){
             steps{
